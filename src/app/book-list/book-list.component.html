@@ -13,7 +13,10 @@
 
 <!-- Display cards when books array has data -->
 <div class="grid-container" *ngIf="books.length > 0">
-  <h2 class="green">Top {{books.length}} Favorite Books</h2>
+
+    <h2 class="green">Top {{books.length}} Favorite Books</h2>
+
+  <hr><hr>
 
   <ng-container *ngFor="let book of books">
     <mat-card class="grid-container__item">
